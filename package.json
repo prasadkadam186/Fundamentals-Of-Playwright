@@ -1,0 +1,22 @@
+{
+  "name": "fundamentals-of-playwright",
+  "version": "1.0.0",
+  "description": "Basic to advance concepts of playwright",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasadkadam186/Fundamentals-Of-Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasadkadam186/Fundamentals-Of-Playwright/issues"
+  },
+  "homepage": "https://github.com/prasadkadam186/Fundamentals-Of-Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.8.0"
+  }
+}
