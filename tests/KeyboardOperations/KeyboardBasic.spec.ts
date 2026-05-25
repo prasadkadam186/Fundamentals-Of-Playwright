@@ -38,5 +38,16 @@ test.describe('Keyboard Actions: ', ()=>{
         await page.mouse.down();
         await page.mouse.move(tBox.x + tBox?.width/2, tBox.y + tBox?.height /2, {steps : 10})
         await page.mouse.up()
+        await page.waitForTimeout(3000)
+    })
+
+    test.only('Right Click option : ', async ({page})=>{
+        await page.goto('https://app.thetestingacademy.com/playwright/widgets/context-menu');
+        await page.getByTestId('ctx-target').first().click({button : 'right'});
+        let allOPtion : string[] = await page.locator(`//ul[@id="ctx-menu"]//li//span[1]`).allInnerTexts();
+        console.log(allOPtion);
+        await page.getByText('Copy', {exact : true}).first().click()
+        await page.waitForTimeout(3000)
+        
     })
 })

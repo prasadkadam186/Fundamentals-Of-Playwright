@@ -17,6 +17,6 @@
   "homepage": "https://github.com/prasadkadam186/Fundamentals-Of-Playwright#readme",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.8.0"
+    "@types/node": "^25.9.1"
   }
 }
