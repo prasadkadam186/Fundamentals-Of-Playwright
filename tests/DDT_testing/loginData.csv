@@ -1,0 +1,5 @@
+description,username,password,shouldPass,expectedError
+valid credentials,admin,admin123,true,
+invalid password,admin,wrongpass,false,Invalid credentials
+empty username,,admin123,false,Username is required
+empty password,admin,,false,Password is required
