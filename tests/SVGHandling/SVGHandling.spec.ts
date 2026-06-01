@@ -21,7 +21,7 @@ test.describe('SVG Hadlin : ', ()=>{
         await expect(output).toContain('Mint triangle')
     })
 
-    test.only("Generate the list of all states", async ({ page }) => {
+    test("Generate the list of all states", async ({ page }) => {
         const states = await page
             .locator(
                 `//div[@id='admin1_map_inner']//*[name()='svg']//*[name()='text' and contains(@class,'sm_label')]`,

@@ -4,7 +4,7 @@ test.describe('Scroll Operations :', ()=>{
     test.beforeEach('', async ({page}) => {
         await page.goto('https://app.thetestingacademy.com/playwright/widgets/scroll')
     })
-    test.only('Scroll Event', async ({page}) => {
+    test('Scroll Event', async ({page}) => {
         await page.getByTestId('section-deep').scrollIntoViewIfNeeded();
         await page.waitForTimeout(3000)
     })
