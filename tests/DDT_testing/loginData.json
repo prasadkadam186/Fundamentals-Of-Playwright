@@ -1,0 +1,26 @@
+[
+    {
+        "description" : "valid Username",
+        "username": "dev@test.com",
+        "password": "Strong@123",
+        "shouldPass" : "true"
+    },
+    {
+        "description" : "Invalid Username",
+        "username": "test@yopmail.com",
+        "password": "test@1234",
+        "shouldPass" : "false"
+    },
+    {
+        "description" : "Empty Username",
+        "username": "",
+        "password": "test@1234",
+        "shouldPass" : "false"
+    },
+    {
+        "description" : "Empty password",
+        "username": "test@yopmail.com",
+        "password": "",
+        "shouldPass" : "false"
+    }
+]
