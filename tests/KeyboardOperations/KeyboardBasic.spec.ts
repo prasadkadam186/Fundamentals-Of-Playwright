@@ -41,7 +41,7 @@ test.describe('Keyboard Actions: ', ()=>{
         await page.waitForTimeout(3000)
     })
 
-    test.only('Right Click option : ', async ({page})=>{
+    test('Right Click option : ', async ({page})=>{
         await page.goto('https://app.thetestingacademy.com/playwright/widgets/context-menu');
         await page.getByTestId('ctx-target').first().click({button : 'right'});
         let allOPtion : string[] = await page.locator(`//ul[@id="ctx-menu"]//li//span[1]`).allInnerTexts();
